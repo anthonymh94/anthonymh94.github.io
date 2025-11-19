@@ -1,0 +1,45 @@
+#middle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+h1 {
+    margin: 10px;
+    padding-left: 15px;
+}
+
+#textBorder {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#textBorder p {
+    margin: 15px;
+    color: #313131;
+    font-size: 1.5rem;
+}
+
+#photo {
+    max-width: 700px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.quote {
+    border: none;
+    outline: none;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}

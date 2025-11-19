@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JMV Construction Portfolio</title>
+        <link rel='stylesheet' href='styles/indexStyles.css'>
+        <link rel='stylesheet' href='styles/jmvPortfolioStyles.css'>
+        <script>
+            function filterSelection(jobType) {
+                pictures = document.getElementsByClassName("picture");
+                buttons = document.getElementsByClassName("btn")
+
+                for (i = 0; i < pictures.length; i++) {
+                    pictures[i].classList.remove("hide");
+
+                    if (!pictures[i].classList.contains(jobType)) {
+                        pictures[i].classList.add("hide");
+                    }
+                } 
+
+                for (i = 0; i < buttons.length; i++) {
+                    if (buttons[i].classList.contains(jobType)) {
+                        buttons[i].style.backgroundColor = "yellow";
+                    }
+                    else {
+                        buttons[i].style.backgroundColor = "white";
+                    }
+                }
+            }
+        </script>
+        <script src="functions/mobileBtn.js" type="text/javascript"></script>
+      </head>
+      <body id="portLayout">
+        <div class="container">
+            <header class="subContainer">
+              <div id="header" class="fluidContainer">
+                <a id="logoLink" href="index.html">
+                    <div id="logo" class="logo hfcontainer">                    
+                        <img class="logo" src="images/text-to-image.png" alt="JMV Construction Logo">                   
+                    </div>
+                </a>
+                <nav id="links">
+                  <ul id="headerLinkList" class="headerLinkList">
+                    <li class="links quote" id="headerQuoteBtn"><a href="jmvGetQuote.html">Get Quote</a></li>
+                    <li class="links" id="portfolio"><a class="active" href="jmvPortfolio.html">Portfolio</a></li>
+                    <li class="links" id="about"><a href="jmvAboutUs.html">About Us</a></li>
+                    <li class="links" id="contact"><a href="tel:+18888888888">Contact Us</a></li>
+                  </ul>
+                  <button id="menuToggle" class="hamburger" aria-label="Menu">☰</button>
+                </nav>
+              </div>
+            </header>
+            <div id="myBtnContainer" class="subContainer">
+                <div id="btn" class="fluidContainer">
+                <a href="jmvGetQuote.html">
+                    <div id="getQuote">
+                        <button class="quote" id="mainQuoteBtn" type="button">Get Quote</button>
+                    </div>
+                </a>
+                <div id="btnBorder">
+                    <button class="btn selectAll" onclick="filterSelection('selectAll')"> Show all</button>
+                    <button class="btn fencing" onclick="filterSelection('fencing')"> Fences</button>
+                    <button class="btn decking" onclick="filterSelection('decking')"> Decking</button>
+                    <button class="btn bathroom" onclick="filterSelection('bathroom')"> Bathroom</button>
+                    <button class="btn kitchen" onclick="filterSelection('kitchen')"> Kitchen</button>
+                </div>
+                </div>
+            </div>
+        <main class="subContainer">
+            <div id="mainContainer" class="fluidContainer">
+                <!-- FENCING -->
+                <div class="picture selectAll fencing">
+                    <img src="https://cdn.shopify.com/s/files/1/2504/4344/files/Screen_Shot_2022-12-12_at_11.29.29_AM_480x480.png?v=1670862769"
+                        alt="fence" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll fencing">
+                    <img src="https://qualityfenceco.com/wp-content/uploads/2016/08/wood-gates-2.jpg" alt="fence"
+                        style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll fencing">
+                    <img src="https://fenceresource.com/wp-content/uploads/2021/11/1x4-cedar-pcikets.jpg" alt="fence"
+                        style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <!-- DECKING -->
+                <div class="picture selectAll decking">
+                    <img src="https://thermory.com/wp-content/uploads/2024/04/Thermory-Benchmark-thermo-spruce-decking_web_elvojakobson-1-4.jpg"
+                        alt="decking" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll decking">
+                    <img src="https://mobileimages.lowes.com/marketingimages/f7c40e70-3e20-49c4-aab4-123d92bcfcfe/decking-og.png"
+                        alt="decking" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll decking">
+                    <img src="https://hillcountrydecking.com/wp-content/uploads/2020/03/Backyard-view-of-grey-rambler-house-with-upper-and-lower-decks.jpg"
+                        alt="decking" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <!-- BATHROOM -->
+
+                <div class="picture selectAll bathroom">
+                    <img src="https://pittsburghremodelingcompany.com/wp-content/uploads/2015/07/Toftrees_1.jpg"
+                        alt="bathroom" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll bathroom">
+                    <img src="https://remodelworks.com/wp-content/uploads/2016/12/Remodel-Works-Rex-4.jpg"
+                        alt="bathroom" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll bathroom">
+                    <img src="https://www.luxurybath.com/img/pages/one-day-remodel.jpg" alt="bathroom"
+                        style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll bathroom">
+                    <img src="https://www.jkath.com/wp-content/uploads/2022/12/4603_Arden_Ave_024-copy.jpg" 
+                        alt="bathroom" style="width: 100%;" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <!-- KITCHEN -->
+                <div class="picture selectAll kitchen">
+                    <img src="https://images.squarespace-cdn.com/content/v1/4fcf5c8684aef9ce6e0a44b0/1590417927708-H7FN0Z86XTLL1MDFMUOO/White+kitchen+with+new+island+countertop"
+                        alt="kitchen" style="width:100%">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll kitchen">
+                    <img src="https://www.distinctiveremodeling.com/wp-content/uploads/2019/12/kitchen14-1-1920x1283.jpg"
+                        alt="kitchen" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+                <div class="picture selectAll kitchen">
+                    <img src="https://www.seapointe.com/wp-content/uploads/2023/04/1-kitchen-remodel-in-dana-point.jpg"
+                        alt="kitchen" style="width:100%" class="staged">
+                    <h4>product type</h4>
+                </div>
+
+            </div>
+        </main>
+            <footer class="subContainer">
+              <div id="footer" class="fluidContainer">
+                <div class="logo hfcontainer">
+                    <p class="company">JMV</p>
+                    <div class="split"></div>
+                    <p class="company">CONSTRUCTION</p>
+                </div>
+                <div id="pages">
+                    <ul id="index">
+                        <li class="footerPages"><a href="index.html">Home</a></li>
+                        <li class="footerPages"><a href="jmvGetQuote.html">Get Quote</a></li>
+                        <li class="footerPages"><a href="jmvPortfolio.html">Portfolio</a></li>
+                        <li class="footerPages"><a href="jmvAboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div id="location" class="hfcontainer">
+                    <h2>Location:</h2>
+                    <p>Sedona, AZ 86005</p>
+                </div>
+                <div id="phone" class="hfcontainer">
+                    <h2>Contact us:</h2>
+                    <p>Phone: <a href="tel:+18888888888">888-888-8888</a></p>
+                    <p>Email: <a href="mailto:madeupemail1543@gmail.com">workemail@gmial.com</a></p>
+                </div>
+            </div>
+        </footer>
+      </body>
+</html>
