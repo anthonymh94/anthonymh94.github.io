@@ -6,29 +6,7 @@
         <title>JMV Construction Portfolio</title>
         <link rel='stylesheet' href='styles/indexStyles.css'>
         <link rel='stylesheet' href='styles/jmvPortfolioStyles.css'>
-        <script>
-            function filterSelection(jobType) {
-                pictures = document.getElementsByClassName("picture");
-                buttons = document.getElementsByClassName("btn")
-
-                for (i = 0; i < pictures.length; i++) {
-                    pictures[i].classList.remove("hide");
-
-                    if (!pictures[i].classList.contains(jobType)) {
-                        pictures[i].classList.add("hide");
-                    }
-                } 
-
-                for (i = 0; i < buttons.length; i++) {
-                    if (buttons[i].classList.contains(jobType)) {
-                        buttons[i].style.backgroundColor = "yellow";
-                    }
-                    else {
-                        buttons[i].style.backgroundColor = "white";
-                    }
-                }
-            }
-        </script>
+        <script src="functions/portfolioFilter.js"></script>
         <script src="functions/mobileBtn.js" type="text/javascript"></script>
       </head>
       <body id="portLayout">
