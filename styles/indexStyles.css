@@ -150,6 +150,8 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
+    -webkit-appearance: none;  /* Remove iOS default styling */
+    appearance: none;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
