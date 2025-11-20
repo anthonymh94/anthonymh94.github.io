@@ -8,9 +8,6 @@ function validateCustomerName(name) {
     return /^[A-Za-z\s'-]+$/.test(name)
 }
 
-function validatePhone(phone) {
-    return /^((1[- ]?)?(\d{3})[- ]?\d{3}[- ]?\d{4})$/.test(phone)
-}
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("consultationForm");
 
@@ -28,13 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (result !== "Valid email ✅") {
         event.preventDefault();
         alert(result);
-    }
-
-    const phone = document.getElementById("phone")
-
-    if (!validatePhone(phone)) {
-        event.preventDefault();
-        alert('phone numbers must be numbers and dashes only')
     }
     
     });
