@@ -9,23 +9,40 @@ function validateCustomerName(name) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    
     const form = document.getElementById("consultationForm");
+    const result = document.getElementById("result")
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", async (e) {
+    e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
-    if (!validateCustomerName(name)) {
-            event.preventDefault();
+
+        if (!validateCustomerName(name)) {          
             alert('Names must be letters, spaces, apostrophes, and hyphens only')
         }
 
-    const email = document.getElementById("email").value.trim();
-    const result = validateCustomEmail(email);
+        const email = document.getElementById("email").value.trim();
+        const check = validateCustomEmail(email);
 
-    if (result !== "Valid email ✅") {
-        event.preventDefault();
-        alert(result);
+        if (check !== "Valid email ✅") {
+            e.preventDefault();
+            alert(check);
+        }
+
+    const response = await fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+    result.innerText = "Thank you! Your message has been sent.";
+    form.reset();
+    } else {
+        result.innerText = "Oops! There was a problem.";
     }
+    });
     
     });
 });
