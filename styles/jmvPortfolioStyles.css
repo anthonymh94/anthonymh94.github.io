@@ -45,6 +45,15 @@ main {
     width: 350px;
     height: 250px;
     margin: 10px;
+    overflow: hidden;
+}
+
+.picture img {
+    transition: transform 0.3s ease;
+}
+
+.picture:hover img {
+    transform: scale(1.1);
 }
 
 .hide {
