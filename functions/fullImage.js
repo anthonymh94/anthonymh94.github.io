@@ -3,9 +3,9 @@ function openModal(src) {
     const img = document.getElementById("modal-img");
 
     img.src = src;
-    modal.classList.remove("hidden");
+    modal.classList.remove("hide");
 }
 
 document.getElementById("modal").addEventListener("click", () => {
-    document.getElementById("modal").classList.add("hidden");
+    document.getElementById("modal").classList.add("hide");
 });
