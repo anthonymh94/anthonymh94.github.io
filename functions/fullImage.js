@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.classList.add("hide");
+            modalImg.src = "";
         }
     });
 });
