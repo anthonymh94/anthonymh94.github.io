@@ -22,4 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
             modalImg.src = "";
         }
     });
+
+    closeBtn.addEventListener("click", () => {
+    modal.classList.add("hide");
+    modalImg.src = ""; // clear image
+    });
 });
