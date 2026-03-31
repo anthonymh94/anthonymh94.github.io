@@ -1,11 +1,24 @@
-function openModal(src) {
+document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
-    const img = document.getElementById("modal-img");
+    const modalImg = document.getElementById("modal-img");
 
-    img.src = src;
-    modal.classList.remove("hide");
-}
+    // Function to open modal
+    function openModal(src) {
+        modalImg.src = src;
+        modal.classList.remove("hide");
+    }
 
-document.getElementById("modal").addEventListener("click", () => {
-    document.getElementById("modal").classList.add("hide");
+    // Attach click to all gallery images
+    document.querySelectorAll('.staged').forEach(img => {
+        img.addEventListener('click', () => {
+            openModal(img.src);
+        });
+    });
+
+    // Close modal when clicking background
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.add("hide");
+        }
+    });
 });
