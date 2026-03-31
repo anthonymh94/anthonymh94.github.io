@@ -68,6 +68,24 @@ main {
     max-height: 90%;
 }
 
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    font-size: 40px;
+    color: white;
+
+    cursor: pointer;
+    z-index: 101; /* above image */
+
+    transition: opacity 0.2s ease;
+}
+
+#close-btn:hover {
+    opacity: 0.7;
+}
+
 .hide {
     display: none; 
 }
