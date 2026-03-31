@@ -8,6 +8,7 @@
         <link rel='stylesheet' href='styles/jmvPortfolioStyles.css'>
         <script src="functions/portfolioFilter.js"></script>
         <script src="functions/mobileBtn.js" type="text/javascript"></script>
+        <script src="functions/fullImage.js" type="text/javascript"></script>
       </head>
       <body id="portLayout">
         <div class="container">
@@ -54,8 +55,11 @@
                 <!-- FENCING -->
                 <div class="picture selectAll fencing">
                     <img src="/images/fence1.jpg"
-                        alt="fence" style="width:100%" class="staged">
+                        alt="fence" style="width:100%" class="staged" onclick="openModal(this.src)">
                     <h4>Fencing</h4>
+                </div>
+                <div id="modal" class="modal hidden">
+                    <img id="modal-img">
                 </div>
                 <div class="picture selectAll fencing">
                     <img src="/images/fence2.jpg" alt="fence"
