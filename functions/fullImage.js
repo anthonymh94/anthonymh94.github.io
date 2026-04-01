@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
-
+    const closeBtn = document.getElementById("close-btn");
+    
     // Function to open modal
     function openModal(src) {
+        
         modalImg.src = src;
         modal.classList.remove("hide");
     }
