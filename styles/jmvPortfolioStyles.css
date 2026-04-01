@@ -40,6 +40,7 @@ main {
     height: 250px;
     margin: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .picture img {
