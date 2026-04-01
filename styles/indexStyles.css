@@ -53,7 +53,7 @@ h2 {
 
 .subContainer {
     display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Georgia", 'Times New Roman', "Times", serif;
     margin: 0;
     justify-content: center;
 }
@@ -291,6 +291,7 @@ nav {
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: inherit;
 }
 
 #getQuoteBody {
