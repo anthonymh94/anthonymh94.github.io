@@ -69,6 +69,10 @@ header {
     align-items: center;
 }
 
+#headerQuoteBtnColor {
+    color: black;
+}
+
 nav a.active {
   color: #ffe300;
 }
