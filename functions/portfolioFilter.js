@@ -12,10 +12,10 @@ function filterSelection(jobType) {
 
     for (i = 0; i < buttons.length; i++) {
         if (buttons[i].classList.contains(jobType)) {
-            buttons[i].style.backgroundColor = "yellow";
+            buttons[i].classList.add("active-btn");
         }
         else {
-            buttons[i].style.backgroundColor = "white";
+            buttons[i].classList.remove("active-btn");
         }
     }
 }

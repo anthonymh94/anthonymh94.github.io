@@ -286,7 +286,7 @@ nav {
 .quote {
     border: none;
     outline: none;
-    background-color: orange;
+    background-color: #ffc107;
     cursor: pointer;
     border-radius: 8px;
     text-transform: uppercase;

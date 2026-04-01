@@ -90,15 +90,22 @@ main {
     display: none; 
 }
 
-.btn.selectAll {
-    background-color: yellow;
+.active-btn {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.active-btn:hover {
+    color: #212529;            /* dark text, sometimes white depending on version */
+    background-color: #ffc107; /* fill */
+    border-color: #ffc107;
 }
 
 .btn {
-    color: black;
+    color: #212529;
     grid-area: header;
     justify-content: center;
-    border: 1px solid #262626;
+    border: 1px solid ##212529;
     outline: none;
     padding: 12px 16px;
     background-color: white;
@@ -131,4 +138,6 @@ main {
 
 .btn:hover {
     opacity: 60%;
+    color: #fff;
+    background-color: #212529;
 }
