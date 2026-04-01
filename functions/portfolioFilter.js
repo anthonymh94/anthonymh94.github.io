@@ -12,10 +12,12 @@ function filterSelection(jobType) {
 
     for (i = 0; i < buttons.length; i++) {
         if (buttons[i].classList.contains(jobType)) {
+            buttons[i].classList.remove("inactive-btn");
             buttons[i].classList.add("active-btn");
         }
         else {
             buttons[i].classList.remove("active-btn");
+            buttons[i].classList.add("inactive-btn");
         }
     }
 }
