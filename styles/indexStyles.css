@@ -258,10 +258,11 @@ footer {
     letter-spacing: 2px;
     background-color: white;
     margin: 5px;
+    padding: 10px;
 }
 
 .companyLogo {
-    max-height: 200px;
+    max-height: 100px;
 }
 
 .split {
