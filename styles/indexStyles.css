@@ -24,7 +24,6 @@ h2 {
     max-height: 150px;
     padding-left: 15px;
     align-self: center;
-    background-color: white;
 }
 
 #logoLink {
@@ -257,6 +256,12 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
+    background-color: white;
+    margin: 5px;
+}
+
+#companyLogo {
+    max-height: 200px;
 }
 
 .split {
