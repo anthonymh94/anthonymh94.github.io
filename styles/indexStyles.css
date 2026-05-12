@@ -121,7 +121,7 @@ a {
 }
 
 #ctTextStart {
-    background-color: black;
+    background-color: #262626;
     padding: 20px; 
     border-radius: 10px;
     width: 100%; 
@@ -217,7 +217,7 @@ input[type="submit"]:hover {
 
 .jmv {
     color: orange;
-    background-color: black;
+    background-color: #262626;
     max-width: max-content;
     padding: 10px;
     border-radius: 10px;
@@ -225,7 +225,7 @@ input[type="submit"]:hover {
 
 footer {
     grid-area: footer;
-    background-color: black;
+    background-color: #262626;
 }
 
 #footer {
